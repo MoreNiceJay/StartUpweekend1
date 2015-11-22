@@ -13,14 +13,34 @@ import UIKit
 class MainPageVC: UIViewController {
 
    
+    @IBOutlet weak var switchOn: UISwitch!
+    @IBOutlet weak var voiceVideoLabel: UILabel!
 
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        
     }
+    
+    @IBAction func switchOn(sender: AnyObject) {
+        
+        if switchOn.on {
+            
+            
+            voiceVideoLabel.text = "Voice only"
 
+            
+            
+            
+        }else {
+            voiceVideoLabel.text = "Video"
+
+        }
+
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

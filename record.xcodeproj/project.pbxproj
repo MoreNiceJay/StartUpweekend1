@@ -18,6 +18,7 @@
 		03055A6C1C01334E0055FE96 /* InfoPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03055A6B1C01334E0055FE96 /* InfoPage.swift */; };
 		03055A6E1C0142150055FE96 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03055A6D1C0142150055FE96 /* MapKit.framework */; };
 		03055A701C0143EB0055FE96 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03055A6F1C0143EB0055FE96 /* LocationManager.swift */; };
+		03055A721C021F700055FE96 /* CorrutionChooseTVCTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03055A711C021F700055FE96 /* CorrutionChooseTVCTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		03055A6B1C01334E0055FE96 /* InfoPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoPage.swift; sourceTree = "<group>"; };
 		03055A6D1C0142150055FE96 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		03055A6F1C0143EB0055FE96 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		03055A711C021F700055FE96 /* CorrutionChooseTVCTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CorrutionChooseTVCTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,11 +113,12 @@
 				03055A031C00AA2E0055FE96 /* MainPageVC.swift */,
 				03055A691C010A560055FE96 /* RecordingViewController.swift */,
 				03055A6B1C01334E0055FE96 /* InfoPage.swift */,
-				03055A6F1C0143EB0055FE96 /* LocationManager.swift */,
+				03055A711C021F700055FE96 /* CorrutionChooseTVCTableViewController.swift */,
 				03055A051C00AA2E0055FE96 /* Main.storyboard */,
 				03055A081C00AA2E0055FE96 /* Assets.xcassets */,
 				03055A0A1C00AA2E0055FE96 /* LaunchScreen.storyboard */,
 				03055A0D1C00AA2E0055FE96 /* Info.plist */,
+				03055A6F1C0143EB0055FE96 /* LocationManager.swift */,
 			);
 			path = record;
 			sourceTree = "<group>";
@@ -206,6 +209,7 @@
 				TargetAttributes = {
 					030559FD1C00AA2E0055FE96 = {
 						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = 3ZGZB9HCJ8;
 					};
 					03055A111C00AA2E0055FE96 = {
 						CreatedOnToolsVersion = 7.1.1;
@@ -269,6 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03055A721C021F700055FE96 /* CorrutionChooseTVCTableViewController.swift in Sources */,
 				03055A041C00AA2E0055FE96 /* MainPageVC.swift in Sources */,
 				03055A6A1C010A560055FE96 /* RecordingViewController.swift in Sources */,
 				03055A701C0143EB0055FE96 /* LocationManager.swift in Sources */,
@@ -415,10 +420,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = record/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.bany.record;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -426,10 +434,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = record/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.bany.record;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
